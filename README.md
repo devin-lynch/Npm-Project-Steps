@@ -1,11 +1,22 @@
-# new-node-steps
+# Npm Project Steps
+
+## Creating a project from scratch
 ---
-# Steps
-    * Create a js file (ex. 'myModule.js').
-    * 'module.exports' is an object that will hold the code to be exported.
-    * Create an 'index.js' file.
-    * In the index.js file, write 'const myModule = require('./myModule.js).
-    * Now in the index.js file you can run code from myModule.js by typing `myModule.${code}`.
-    * Check for dependencies located in package.JSON file.
-    * `npm i` to install said dependencies. 
-    * You can then run index.js in your terminal to import the module.
+
+### Setting up the javascript
+    * Create directory and cd into it
+    * npm init -y (-y to answer yes to all prompts)
+    * install needed packages with npm install <package names>
+    * Create a js file in the directory
+---
+
+### Setting up the git repo
+    * run `git init` to create a new repo in the project directory
+    * create a `.gitignore` file and add `node_modules` to it. Be slick with `echo node_modules >> .gitignore`
+    * check to make sure node_modules folder is not being tracked with a `git status`
+    * add and commit your work!
+---
+
+## Cloning a project down
+    * clone the repo down to your local and cd into the new directory
+    * run `npm install` or `npm i` to install the required packages from the package.json
